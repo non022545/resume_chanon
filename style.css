@@ -58,7 +58,7 @@ nav .menuitem {
 @media screen {
     
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     nav .menuitem {
         display: none;
     }
