@@ -6,7 +6,8 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* ปรับตามความสูงของ Navbar */
+    scroll-padding-top: 80px;
+    /* ปรับตามความสูงของ Navbar */
 }
 
 
@@ -41,13 +42,34 @@ nav {
     justify-content: center;
     gap: 10px;
     /* backdrop-filter: blur(10px); ทำให้พื้นหลังเบลอ */
-    z-index: 1000; /* ให้ Navbar อยู่เหนือทุกอย่าง */
+    z-index: 1000;
+    /* ให้ Navbar อยู่เหนือทุกอย่าง */
 
 }
 
-nav .menuitem {
+.minimenu {
     display: flex;
     align-items: center;
+    /* border: 2px solid white; */
+    padding: 0 10px;
+
+}
+
+.minimenu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+
+.minimenu a {
+    display: none;
+}
+
+
+nav .menuitem {
+    display: flex;
+    justify-content: space-between;
     /* border: 2px solid white; */
     width: 1400px;
     padding: 0 50px;
@@ -55,33 +77,53 @@ nav .menuitem {
 
 }
 
-@media screen {
-    
+.iconnav i {
+    display: none;
+
 }
-@media screen and (max-width: 1000px) {
-    nav .menuitem {
-        display: none;
-    }
+
+.iconnav i {
+    font-size: 30px;
+
+}
+
+.iconnav :hover {
+    transform: rotate(90deg);
+
+}
+
+.logo1 {
+    display: none;
+}
+
+
+.iconnav {
+    display: none;
+    display: flex;
+    align-items: center;
+
 }
 
 nav .navbar {
-    width: 1500px;
-    color: white;
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: center;
     gap: 15px;
     /* border: 2px solid white; */
     font-size: 20px;
+
 }
+
+
+
 .navbar a {
     color: white;
     text-decoration: none
 }
+
 .navbar :hover {
     background: linear-gradient(90deg, #d400ff, #8000ff);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     font-size: 22px;
     font-weight: bold
 }
@@ -96,9 +138,21 @@ nav .logo {
     font-family: 'Finger Paint', cursive;
     background: linear-gradient(90deg, #d400ff, #8000ff);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
+ 
+}
+
+
+nav .logo1 {
+    /* border: 2px solid white; */
+    font-size: 30px;
+    font-family: 'Finger Paint', cursive;
+    background: linear-gradient(90deg, #d400ff, #8000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
 }
+
 /* 
 .unstext ,.unstitle {
     display: none;
@@ -112,11 +166,15 @@ nav .logo {
     /* ใช้ min-height แทน */
     margin-top: 80px;
     /* ให้เนื้อหาห่างจาก nav */
-    background-size: cover;  /* ทำให้ภาพเต็มพื้นที่ */
-    background-position: center; /* จัดให้อยู่ตรงกลาง */
-    background-repeat: no-repeat; /* ป้องกันการซ้ำ */
+    background-size: cover;
+    /* ทำให้ภาพเต็มพื้นที่ */
+    background-position: center;
+    /* จัดให้อยู่ตรงกลาง */
+    background-repeat: no-repeat;
+    /* ป้องกันการซ้ำ */
     background-image: url(images/backgroundbody.png);
 }
+
 .conthome {
     display: flex;
     width: 1400px;
@@ -228,9 +286,12 @@ nav .logo {
     width: 100%;
     height: 750px;
     background: url(images/backgroundobj.png);
-    background-size: cover;  /* ทำให้ภาพเต็มพื้นที่ */
-    background-position: center; /* จัดให้อยู่ตรงกลาง */
-    background-repeat: no-repeat; /* ป้องกันการซ้ำ */
+    background-size: cover;
+    /* ทำให้ภาพเต็มพื้นที่ */
+    background-position: center;
+    /* จัดให้อยู่ตรงกลาง */
+    background-repeat: no-repeat;
+    /* ป้องกันการซ้ำ */
 }
 
 .contobj {
@@ -433,8 +494,9 @@ nav .logo {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    
+
 }
+
 footer {
     display: flex;
     align-items: center;
@@ -445,13 +507,59 @@ footer {
     color: white;
     font-size: 16px;
 }
- footer a{
+
+footer a {
     color: yellow;
- }
- .adds {
+}
+
+.adds {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5px;
- }
+}
+
+@media screen and (max-width: 1000px) {
+    nav .menuitem {
+        display: flex;
+        justify-content: start;
+
+    }
+
+    .logo {
+        margin-left: 30px;
+
+
+    }
+
+    .minimenu a {
+        display: block;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .logo1 {
+        display: block;
+        display: flex;
+
+    }
+
+    .logo {
+        display: none;
+
+    }
+
+    .iconnav i {
+        display: block;
+
+    }
+
+    nav .menuitem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
