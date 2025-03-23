@@ -520,7 +520,7 @@ footer a {
     gap: 5px;
 }
 
-/* @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     nav .menuitem {
         display: flex;
         justify-content: start;
@@ -562,4 +562,4 @@ footer a {
         align-items: center;
         justify-content: center;
     }
-} */
+}
