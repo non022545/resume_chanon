@@ -55,6 +55,15 @@ nav .menuitem {
 
 }
 
+@media screen {
+    
+}
+@media screen and (max-width: 800px) {
+    nav .menuitem {
+        display: none;
+    }
+}
+
 nav .navbar {
     width: 1500px;
     color: white;
