@@ -1,0 +1,140 @@
+/* 
+.conthome, .contpsn, .contobj, .contepr, .contedc, .contpj {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+/* home  ***************************************** */
+
+.contname {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.2s;
+}
+.contphotome {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.2s;
+}
+
+/* personal  ***************************************** */
+
+.psntitle {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.psnphotome {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.psntext {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+
+/* object  ************************************************ */
+.contobj {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+
+
+/* Experience   ********************************************* */
+
+.eprtitle {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.eprtext {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.eprph {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+
+/* Education   ********************************************* */
+
+.edctitle {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.edcpts {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.unsicon, .hscicon {
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.unstext, .hsctitle {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.unstitle, .hsctext {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+
+
+/* Portfolio   ********************************************* */
+
+.pjtitle {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.pjlink {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+.pjph {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 0.3s;
+}
+
+/* show    **************************************** */
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
