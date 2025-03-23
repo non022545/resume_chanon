@@ -139,7 +139,7 @@ nav .logo {
     background: linear-gradient(90deg, #d400ff, #8000ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
- 
+
 }
 
 
@@ -150,7 +150,7 @@ nav .logo1 {
     background: linear-gradient(90deg, #d400ff, #8000ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
 }
 
 /* 
@@ -520,16 +520,43 @@ footer a {
     gap: 5px;
 }
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #222322;
+    height: 100vh;
+    width: 30%;
+    margin-top: 80px;
+    padding: 10px 10px;
+    gap: 10px;
+    display: none;
+}
+
+
 @media screen and (max-width: 1000px) {
-    nav .menuitem {
+
+    body {
         display: flex;
-        justify-content: start;
+        align-items: flex-start;
+        width: 100%;
 
     }
 
-    .logo {
-        margin-left: 30px;
+    nav .menuitem {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
 
+    .logo1 {
+        display: block;
+        margin-left: 20px;
+
+    }
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
 
     }
 
@@ -541,11 +568,7 @@ footer a {
         display: none;
     }
 
-    .logo1 {
-        display: block;
-        display: flex;
 
-    }
 
     .logo {
         display: none;
@@ -557,13 +580,125 @@ footer a {
 
     }
 
-    nav .menuitem {
+    .container {
+        display: flex;
+        width: 100%;
+        height: 850px;
+        /* ใช้ min-height แทน */
+        margin-top: 80px;
+        /* ให้เนื้อหาห่างจาก nav */
+        background-size: cover;
+        /* ทำให้ภาพเต็มพื้นที่ */
+        background-position: center;
+        /* จัดให้อยู่ตรงกลาง */
+        background-repeat: no-repeat;
+        /* ป้องกันการซ้ำ */
+        background-image: url(images/backgroundbody.png);
+    }
+    .conthome {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90px;
+        margin-top: 530px;
+
+    }
+
+    .contname {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-left: 0;
+    }
+
+    .engname {
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+
+    .thname {
+        width: 100%;
+        font-size: 20px;
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .contphotome {
+        padding-right: 0px;
+
+    }
+
+    .photome img {
+        width: 140px;
+        height: 350px;
+        background-color: aliceblue;
+
+    }
+
+
+    .container1 {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    body{
+        background: linear-gradient(130deg, #222323, #222323, #222323, #301B38, #371742);
+        /* background-color: #252525; */
         width: 100%;
-        background-color: aqua;
+        height: 300px;
+    }
+    
+    .contpsn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        /* background-r: #868686; */
+        height: 300px;
+        /* padding: 0 100px; */
+    }
+    
+    .boxtitle {
+        display: flex;
+        grid-column: span 2;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+      
+    }
+    
+    
+    .boxph {
+        display: flex;
+
+        justify-content: end;
+        margin-right: 10px;
+    }
+    
+    .boxpsn {
+        display: flex;
+        color: white;
+
+    }
+    
+    .psntext {
+        display: flex;
+        margin-left: 10px;
+        flex-direction: column;
+        font-size: 10px;
+        margin-top: 0px;
+        line-height: 1.8;
+    }
+    
+    
+    .psnphotome img {
+        width: 100px;
+        height: 100px;
     }
 }

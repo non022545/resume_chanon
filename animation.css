@@ -15,13 +15,13 @@
 
 .contname {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(200px);
     transition: opacity 1s ease-out, transform 1s ease-out;
     transition-delay: 0.2s;
 }
 .contphotome {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(-200px);
     transition: opacity 1s ease-out, transform 1s ease-out;
     transition-delay: 0.2s;
 }
