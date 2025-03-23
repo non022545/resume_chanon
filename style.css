@@ -33,7 +33,7 @@ nav {
     height: 80px;
     background-color: #252525;
     color: white;
-
+    width: 100%;
     /* ทำให้ navbar กว้างเต็มหน้าจอ */
     padding: 10px 0;
     /* เพิ่ม padding ให้ดูสวยงาม */
@@ -534,7 +534,7 @@ footer a {
     }
 
     .minimenu a {
-        display: block;
+        display: none;
     }
 
     .navbar a {
@@ -561,5 +561,9 @@ footer a {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    body{
+        width: 100%;
+        background-color: aqua;
     }
 }
