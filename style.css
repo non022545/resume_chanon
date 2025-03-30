@@ -260,6 +260,7 @@ nav .logo1 {
 .boxph {
     display: flex;
     justify-content: end;
+    
 
 }
 
@@ -278,8 +279,10 @@ nav .logo1 {
 
 
 .psnphotome img {
-    width: 400px;
     height: 400px;
+    width: auto;
+    border-radius: 15px;
+    margin-top: 50px;
 }
 
 
@@ -374,7 +377,7 @@ nav .logo1 {
 
 .eprph img {
     height: 500px;
-    filter: drop-shadow(25px 15px 5px #161616);
+    
 }
 
 .container4 {
@@ -694,20 +697,20 @@ footer a {
         font-size: 20px;
         font-weight: bold;
         color: white;
-        margin-top: 20px;
+        margin-top: 0px;
 
     }
 
 
     .boxph {
         display: flex;
-
         justify-content: end;
         margin-right: 10px;
     }
 
     .boxpsn {
         display: flex;
+        margin-top: 30px;
         color: white;
 
     }
@@ -719,12 +722,15 @@ footer a {
         font-size: 10px;
         margin-top: 0px;
         line-height: 1.8;
+        
     }
 
 
     .psnphotome img {
-        width: 100px;
-        height: 100px;
+        margin-top: 10px;
+        height: 150px;
+        width: auto;
+        border-radius: 15px;
     }
 
 
@@ -821,7 +827,7 @@ footer a {
     .eprph img {
         height: 120px;
         margin-right: 5px;
-        filter: drop-shadow(25px 15px 5px #161616);
+        filter: drop-shadow(5px 5px 5px #161616);
     }
 
 
@@ -863,7 +869,7 @@ footer a {
     .edcpts {
         display: flex;
         justify-content: center;
-        filter: drop-shadow(5px 1px 1px #161616);
+        filter: drop-shadow(1px 1px 1px #161616);
     }
 
     .edcpts img {
@@ -957,10 +963,10 @@ footer a {
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 120px;
+        height: 70px;
         background-color: #222323;
         color: white;
-        font-size: 10px;
+        font-size: 8px;
     }
 
     footer a {
