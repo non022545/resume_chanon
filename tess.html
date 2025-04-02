@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เปลี่ยนรูปภาพแบบค่อยๆ เปลี่ยน</title>
+    <style>
+        .image-container {
+            width: 100px;
+            height: 200px;
+        }
+
+        .image-container img {
+            width: 100px;
+            opacity: 1;
+            transition: opacity 0.6s ease-in-out;
+        }
+
+        .fade-out {
+            opacity: 0;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.6s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            width: 15px;
+            height: 15px;
+            margin: 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .active {
+            background-color: #007bff;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>เปลี่ยนรูปภาพแบบค่อยๆ เปลี่ยน</h2>
+    <div class="image-container">
+        <img id="currentImage" src="https://cdn.pixabay.com/photo/2025/03/22/20/26/ai-generated-9487507_640.png" alt="รูปภาพ">
+    </div>
+    <div class="dots">
+        <span class="dot active" onclick="changeImage(0)"></span>
+        <span class="dot" onclick="changeImage(1)"></span>
+        <span class="dot" onclick="changeImage(2)"></span>
+        <span class="dot" onclick="changeImage(3)"></span>
+    </div>
+    <br>
+    <button onclick="prevImage()">ย้อนกลับ</button>
+    <button onclick="nextImageFunc()">ถัดไป</button>
+
+    <script>
+        const images = [
+            "https://media.discordapp.net/attachments/1356894652053061642/1356906714577768518/image.png",
+            "https://cdn.pixabay.com/photo/2024/12/28/13/28/tram-9296118_640.jpg",
+            "https://cdn.pixabay.com/photo/2025/03/17/14/43/bird-9476034_640.png",
+            "https://cdn.pixabay.com/photo/2023/12/30/11/22/monstera-8477880_640.jpg"
+        ];
+
+        let currentIndex = 0;
+        const currentImage = document.getElementById("currentImage");
+        const dots = document.querySelectorAll(".dot");
+
+        function changeImage(index) {
+            currentImage.classList.add("fade-out");
+            setTimeout(() => {
+                currentImage.src = images[index];
+                currentImage.classList.remove("fade-out");
+                currentImage.classList.add("fade-in");
+                setTimeout(() => {
+                    currentImage.classList.remove("fade-in");
+                }, 600);
+                updateDots(index);
+            }, 600);
+        }
+
+        function updateDots(index) {
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === index);
+            });
+        }
+
+        function nextImageFunc() {
+            currentIndex = (currentIndex + 1) % images.length;
+            changeImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            changeImage(currentIndex);
+        }
+    </script>
+</body>
+
+</html>

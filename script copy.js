@@ -43,20 +43,20 @@ const eprimges = [
 ];
 
 let indeximg = 0;
-const fadeimg = document.getElementById('fadeimg');
+const fadeimgpj = document.getElementById('fadeimgpj');
 const dots = document.querySelectorAll(".dot");
 
 function changeimg(index) {
-    fadeimg.classList.add('fade-out');
+    fadeimgpj.classList.add('fade-out');
     setTimeout(() => {
-        fadeimg.src = eprimges[index];
-        fadeimg.classList.remove("fade-out");
-        fadeimg.classList.add("fade-in");
+        fadeimgpj.src = eprimges[index];
+        fadeimgpj.classList.remove("fade-out");
+        fadeimgpj.classList.add("fade-in");
         setTimeout(() => {
             fadeimg.classList.remove("fade-in");
         }, 600);
         updatedots(index);
-    }, 200);
+    }, 600);
 }
 
 function updatedots(index) {
@@ -73,7 +73,9 @@ function previmg() {
 function nextimg() {
     indeximg = (indeximg - 1 + eprimges.length) % eprimges.length;
     changeimg(indeximg);
-}
+};
+
+// ******************************************************************
 
 const pjimges = [
     "https://i.postimg.cc/MT1krKXw/1-1.png",
@@ -101,14 +103,14 @@ function changeimgpj(index) {
         pjfadeimg.classList.add("fade-in");
         setTimeout(() => {
             pjfadeimg.classList.remove("fade-in");
-        }, 600);
-        updatedotspj(index);
-    }, 200);
+        }, 800);
+        updatedots(index);
+    }, 800);
 }
 
-function updatedotspj(index) {
+function updatedots(index) {
     dotspj.forEach((pjdot, i) => {
-        pjdot.classList.toggle("activepj", i === index);
+        pjdot.classList.toggle("active", i === index);
     });
 }
 
