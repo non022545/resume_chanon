@@ -904,7 +904,7 @@ footer a {
         height: 80px;
         width: auto;
         margin-right: 5px;
-    
+        border-radius: 5px;
         filter: drop-shadow(5px 5px 5px #161616);
     }
     .dots {
@@ -1064,7 +1064,7 @@ footer a {
     .dotspj {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 6px;
     }
     
     .pjdot {
@@ -1084,7 +1084,10 @@ footer a {
         margin-top: 50px;
         display: flex;
         justify-content: center;
-
+ 
+    }
+    .pjph img {
+        border-radius: 10px;
     }
 
     footer {
