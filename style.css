@@ -382,7 +382,7 @@ nav .logo1 {
 .dots {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .dot {
@@ -537,11 +537,18 @@ nav .logo1 {
     font-size: 64px;
     padding: 50px;
     font-weight: bold;
+    margin-top: 50px;
 }
 
 .pjlink {
     font-size: 30px;
-    margin-left: 90px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pjlink a {
+    color: #0091ff;
+
 }
 
 
@@ -551,6 +558,20 @@ nav .logo1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+.actionpreviewpj {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 50px;
+
+}
+
+.actionpreviewpj img {
+    width: 50px;
+    height: auto;
 
 }
 
@@ -575,9 +596,11 @@ nav .logo1 {
     display: inline-block;
     transition: background-color 0.3s ease;
 }
+
 .activepj {
     background-color: #bb00ff;
 }
+
 footer {
     display: flex;
     align-items: center;
@@ -614,7 +637,1253 @@ footer a {
 }
 
 
+
+
+/* *****************1300********************************************************* */
+
+@media screen and (max-width: 1300px) {
+    body {
+        /* background-image: url(images/backgroundbody.png); */
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Inter', 'Noto Sans Thai', sans-serif;
+        min-height: 100vh;
+        width: 100%;
+
+
+    }
+
+
+    nav {
+        position: fixed;
+        /* ทำให้แถบเมนูคงที่ */
+        height: 80px;
+        background-color: #252525;
+        color: white;
+        width: 100%;
+        /* ทำให้ navbar กว้างเต็มหน้าจอ */
+        padding: 10px 0;
+        /* เพิ่ม padding ให้ดูสวยงาม */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* backdrop-filter: blur(10px); ทำให้พื้นหลังเบลอ */
+        z-index: 1000;
+        /* ให้ Navbar อยู่เหนือทุกอย่าง */
+
+    }
+
+    .minimenu {
+        display: flex;
+        align-items: center;
+        /* border: 2px solid white; */
+        padding: 0 10px;
+
+    }
+
+    .minimenu a {
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+
+    }
+
+    .minimenu a {
+        display: none;
+
+    }
+
+
+    nav .menuitem {
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid white; */
+        width: 1400px;
+        padding: 0 50px;
+        color: white;
+
+    }
+
+    .iconnav i {
+        display: none;
+
+    }
+
+    .iconnav i {
+        font-size: 30px;
+
+    }
+
+    .iconnav :hover {
+        transform: rotate(90deg);
+
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+
+    .iconnav {
+        display: none;
+        display: flex;
+        align-items: center;
+
+    }
+
+    nav .navbar {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        /* border: 2px solid white; */
+        font-size: 20px;
+
+    }
+
+
+
+    .navbar a {
+        color: white;
+        text-decoration: none
+    }
+
+    .navbar :hover {
+        background: linear-gradient(90deg, #d400ff, #8000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 22px;
+        font-weight: bold
+    }
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+    nav .logo {
+        /* border: 2px solid white; */
+        font-size: 30px;
+        font-family: 'Finger Paint', cursive;
+        background: linear-gradient(90deg, #d400ff, #8000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+
+    nav .logo1 {
+        /* border: 2px solid white; */
+        font-size: 30px;
+        font-family: 'Finger Paint', cursive;
+        background: linear-gradient(90deg, #d400ff, #8000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    /* 
+    .unstext ,.unstitle {
+        display: none;
+    } */
+
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 1080px;
+        /* ใช้ min-height แทน */
+        margin-top: 80px;
+        /* ให้เนื้อหาห่างจาก nav */
+        background-size: cover;
+        /* ทำให้ภาพเต็มพื้นที่ */
+        background-position: center;
+        /* จัดให้อยู่ตรงกลาง */
+        background-repeat: no-repeat;
+        /* ป้องกันการซ้ำ */
+        background-image: url(images/backgroundbody.png);
+
+    }
+
+    .conthome {
+        display: flex;
+        width: 1400px;
+        height: 950px;
+        margin-top: 20px;
+    }
+
+
+    .contname {
+        flex-grow: 1;
+        color: white;
+
+
+    }
+
+    .engname {
+        width: 100%;
+        font-size: 60px;
+        font-weight: bold;
+        margin-left: 50px;
+        margin-top: 300px;
+        /* ให้เนื้อหาห่างจาก nav */
+    }
+
+    .thname {
+        width: 100%;
+        font-size: 40px;
+        margin-left: 50px;
+
+    }
+
+
+    .contphotome {
+        flex-grow: 0;
+        padding-right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .photome img {
+        height: 700px;
+        mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+
+    }
+
+    .container1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(130deg, #222323, #222323, #222323, #301B38, #371742);
+        /* background-color: #252525; */
+        width: 100%;
+        height: 770px;
+    }
+
+    .contpsn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        /* background-r: #868686; */
+        width: 1400px;
+        height: 770px;
+        /* padding: 0 100px; */
+    }
+
+    .boxtitle {
+        display: flex;
+        grid-column: span 2;
+        align-items: center;
+        justify-content: center;
+        font-size: 54px;
+        font-weight: bold;
+        color: white;
+        margin-top: 50px;
+    }
+
+
+    .boxph {
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .boxpsn {
+        color: white;
+    }
+
+    .psntext {
+        display: flex;
+        margin-left: 80px;
+        flex-direction: column;
+        font-size: 20px;
+        margin-top: 100px;
+        line-height: 1.8;
+    }
+
+
+    .psnphotome img {
+        height: 400px;
+        width: auto;
+        border-radius: 15px;
+        margin-top: 50px;
+    }
+
+
+    .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 750px;
+        background: url(images/backgroundobj.png);
+        background-size: cover;
+        /* ทำให้ภาพเต็มพื้นที่ */
+        background-position: center;
+        /* จัดให้อยู่ตรงกลาง */
+        background-repeat: no-repeat;
+        /* ป้องกันการซ้ำ */
+    }
+
+    .contobj {
+        width: 1400px;
+        height: 650px;
+    }
+
+    .contobj {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .objtitle {
+        font-size: 54px;
+        font-weight: bold;
+    }
+
+    .objtext {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+
+    .container3 {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(230deg, #222323, #222323, #222323, #301B38, #371742);
+        width: 100%;
+        color: white;
+
+    }
+
+    .contepr {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .eprtitle {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 54px;
+        font-weight: bold;
+        margin-top: 0px;
+
+    }
+
+    .eprtext {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .indent-li {
+        text-indent: -5px;
+        /* ลดระยะบรรทัดแรก */
+        padding-left: 5px;
+        /* ทำให้บรรทัดที่สองเริ่มจากจุดเดิม */
+    }
+
+    .eprph {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .eprph img {
+        height: 300px;
+        width: 550px;
+        margin-right: 5px;
+        border-radius: 5px;
+        filter: drop-shadow(5px 5px 5px #161616);
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .next img {
+        height: 20px;
+        width: auto;
+    }
+
+    .prev img {
+        height: 20px;
+        width: auto;
+    }
+
+    .active {
+        background-color: #bb00ff;
+    }
+
+    .actionpreview {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        gap: 5px;
+
+    }
+
+    .actionpreview img {
+        height: 40px;
+
+    }
+
+    .container4 {
+        display: flex;
+        justify-content: center;
+        background-color: #222323;
+        width: 100%;
+        height: 690px;
+        color: white;
+    }
+
+    .contedc {
+        width: 1400px;
+        height: 690px;
+        display: grid;
+        grid-template-columns: 2fr 0fr 2fr;
+        /* ทำให้คอลัมน์ที่ 3 แคบลง */
+        grid-template-rows: auto auto auto;
+
+    }
+
+    .edctitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: span 3;
+        font-size: 54px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .edcuns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .edcpts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(5px 1px 1px #161616);
+    }
+
+    .edchsc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .unsicon img {
+        height: 130px;
+        width: auto;
+        filter: drop-shadow(15px 10px 5px #161616);
+    }
+
+    .hscicon img {
+        height: 130px;
+        width: auto;
+        filter: drop-shadow(15px 10px 5px #161616);
+    }
+
+    .unstitle {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .hsctitle {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .unstext {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .hsctext {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .container5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 100%;
+        height: 1080px;
+        background: linear-gradient(130deg, #222323, #222323, #222323, #301B38, #371742);
+    }
+
+    .contpj {
+        width: 1400px;
+        height: 1080px;
+
+    }
+
+    .pjtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 54px;
+        padding: 50px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    .pjlink {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .pjlink a {
+        color: #0091ff;
+
+    }
+
+
+    .pjph {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .pjphfade {
+        width: 900px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .dotspj {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .pjdot {
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .actionpreviewpj {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        gap: 5px;
+
+    }
+
+    .actionpreviewpj img {
+        width: 50px;
+        height: auto;
+    }
+
+    .activepj {
+        background-color: #bb00ff;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 120px;
+        background-color: #222323;
+        color: white;
+        font-size: 16px;
+    }
+
+    footer a {
+        color: yellow;
+    }
+
+    .adds {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        background-color: #222322;
+        height: 100vh;
+        width: 30%;
+        margin-top: 80px;
+        padding: 10px 10px;
+        gap: 10px;
+        display: none;
+    }
+}
+
+
+
+/* ******************************1000********************************************************* */
+
 @media screen and (max-width: 1000px) {
+    body {
+        /* background-image: url(images/backgroundbody.png); */
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Inter', 'Noto Sans Thai', sans-serif;
+        min-height: 100vh;
+        width: 100%;
+
+
+    }
+
+
+    nav {
+        position: fixed;
+        /* ทำให้แถบเมนูคงที่ */
+        height: 80px;
+        background-color: #252525;
+        color: white;
+        width: 100%;
+        /* ทำให้ navbar กว้างเต็มหน้าจอ */
+        padding: 10px 0;
+        /* เพิ่ม padding ให้ดูสวยงาม */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* backdrop-filter: blur(10px); ทำให้พื้นหลังเบลอ */
+        z-index: 1000;
+        /* ให้ Navbar อยู่เหนือทุกอย่าง */
+
+    }
+
+    .minimenu {
+        display: flex;
+        align-items: center;
+        /* border: 2px solid white; */
+        padding: 0 10px;
+
+    }
+
+    .minimenu a {
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+
+    }
+
+    .minimenu a {
+        display: none;
+
+    }
+
+
+    nav .menuitem {
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid white; */
+        width: 1400px;
+        padding: 0 50px;
+        color: white;
+
+    }
+
+    .iconnav i {
+        display: none;
+
+    }
+
+    .iconnav i {
+        font-size: 30px;
+
+    }
+
+    .iconnav :hover {
+        transform: rotate(90deg);
+
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+
+    .iconnav {
+        display: none;
+        display: flex;
+        align-items: center;
+
+    }
+
+    nav .navbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* border: 2px solid white; */
+        font-size: 12px;
+
+    }
+
+
+
+    .navbar a {
+        color: white;
+        text-decoration: none
+    }
+
+    .navbar :hover {
+        background: linear-gradient(90deg, #d400ff, #8000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 22px;
+        font-weight: bold
+    }
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+    nav .logo {
+        /* border: 2px solid white; */
+        font-size: 30px;
+        font-family: 'Finger Paint', cursive;
+        background: linear-gradient(90deg, #d400ff, #8000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+
+    nav .logo1 {
+        /* border: 2px solid white; */
+        font-size: 30px;
+        font-family: 'Finger Paint', cursive;
+        background: linear-gradient(90deg, #d400ff, #8000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    /* 
+    .unstext ,.unstitle {
+        display: none;
+    } */
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 850px;
+        /* ใช้ min-height แทน */
+        margin-top: 80px;
+        /* ให้เนื้อหาห่างจาก nav */
+        background-size: cover;
+        /* ทำให้ภาพเต็มพื้นที่ */
+        background-position: center;
+        /* จัดให้อยู่ตรงกลาง */
+        background-repeat: no-repeat;
+        /* ป้องกันการซ้ำ */
+        background-image: url(images/backgroundbody.png);
+    }
+
+    .conthome {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90px;
+        margin-top: 650px;
+
+    }
+
+    .contname {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-left: 0;
+    }
+
+    .engname {
+        width: 100%;
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+
+    .thname {
+        width: 100%;
+        font-size: 40px;
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .contphotome {
+        padding-right: 0px;
+
+    }
+
+    .photome img {
+
+        height: 450px;
+
+    }
+
+
+    .container1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(130deg, #222323, #222323, #222323, #301B38, #371742);
+        /* background-color: #252525; */
+        width: 100%;
+        height: 770px;
+    }
+
+    .contpsn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        /* background-r: #868686; */
+        width: 1400px;
+        height: 770px;
+        /* padding: 0 100px; */
+    }
+
+    .boxtitle {
+        display: flex;
+        grid-column: span 2;
+        align-items: center;
+        justify-content: center;
+        font-size: 54px;
+        font-weight: bold;
+        color: white;
+        margin-top: 50px;
+    }
+
+
+    .boxph {
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .boxpsn {
+        color: white;
+    }
+
+    .psntext {
+        display: flex;
+        margin-left: 80px;
+        flex-direction: column;
+        font-size: 20px;
+        margin-top: 100px;
+        line-height: 1.8;
+    }
+
+
+    .psnphotome img {
+        height: 400px;
+        width: auto;
+        border-radius: 15px;
+        margin-top: 50px;
+    }
+
+
+    .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 750px;
+        background: url(images/backgroundobj.png);
+        background-size: cover;
+        /* ทำให้ภาพเต็มพื้นที่ */
+        background-position: center;
+        /* จัดให้อยู่ตรงกลาง */
+        background-repeat: no-repeat;
+        /* ป้องกันการซ้ำ */
+    }
+
+    .contobj {
+        width: 1400px;
+        height: 650px;
+    }
+
+    .contobj {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .objtitle {
+        font-size: 54px;
+        font-weight: bold;
+    }
+
+    .objtext {
+        font-size: 17px;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+
+    .container3 {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(230deg, #222323, #222323, #222323, #301B38, #371742);
+        width: 100%;
+        color: white;
+
+    }
+
+    .contepr {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .eprtitle {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 54px;
+        font-weight: bold;
+        margin-top: 30px;
+
+    }
+
+    .eprtext {
+        font-size: 17px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .indent-li {
+        text-indent: -20px;
+        /* ลดระยะบรรทัดแรก */
+        padding-left: 20px;
+        /* ทำให้บรรทัดที่สองเริ่มจากจุดเดิม */
+    }
+
+    .eprph {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .eprph img {
+        height: 300px;
+        width: 550px;
+        margin-right: 5px;
+        border-radius: 5px;
+        filter: drop-shadow(5px 5px 5px #161616);
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .next img {
+        height: 20px;
+        width: auto;
+    }
+
+    .prev img {
+        height: 20px;
+        width: auto;
+    }
+
+    .active {
+        background-color: #bb00ff;
+    }
+
+    .actionpreview {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        gap: 5px;
+
+    }
+
+    .actionpreview img {
+        height: 40px;
+
+    }
+
+    .container4 {
+        display: flex;
+        justify-content: center;
+        background-color: #222323;
+        width: 100%;
+        height: 690px;
+        color: white;
+    }
+
+    .contedc {
+        width: 1400px;
+        height: 690px;
+        display: grid;
+        grid-template-columns: 2fr 0fr 2fr;
+        /* ทำให้คอลัมน์ที่ 3 แคบลง */
+        grid-template-rows: auto auto auto;
+
+    }
+
+    .edctitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: span 3;
+        font-size: 54px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .edcuns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .edcpts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(5px 1px 1px #161616);
+    }
+
+    .edchsc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .unsicon img {
+        height: 130px;
+        width: auto;
+        filter: drop-shadow(15px 10px 5px #161616);
+    }
+
+    .hscicon img {
+        height: 130px;
+        width: auto;
+        filter: drop-shadow(15px 10px 5px #161616);
+    }
+
+    .unstitle {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .hsctitle {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .unstext {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .hsctext {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .container5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 100%;
+        height: 880px;
+        background: linear-gradient(130deg, #222323, #222323, #222323, #301B38, #371742);
+    }
+
+    .contpj {
+        width: 1400px;
+        height: 880px;
+
+    }
+
+    .pjtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 54px;
+        padding: 50px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    .pjlink {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .pjlink a {
+        color: #0091ff;
+
+    }
+
+
+    .pjph {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .pjphfade {
+        width: 500px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .dotspj {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .pjdot {
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .actionpreviewpj {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        gap: 5px;
+
+    }
+
+    .actionpreviewpj img {
+        width: 50px;
+        height: auto;
+    }
+
+    .activepj {
+        background-color: #bb00ff;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 120px;
+        background-color: #222323;
+        color: white;
+        font-size: 16px;
+    }
+
+    footer a {
+        color: yellow;
+    }
+
+    .adds {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        background-color: #222322;
+        height: 100vh;
+        width: 30%;
+        margin-top: 80px;
+        padding: 10px 10px;
+        gap: 10px;
+        display: none;
+    }
+}
+
+/***************************************************600px********************************** */
+
+@media screen and (max-width: 600px) {
 
     body {
         display: flex;
@@ -649,7 +1918,7 @@ footer a {
         justify-content: start;
         padding: 20px;
 
-        
+
 
     }
 
@@ -857,17 +2126,16 @@ footer a {
         display: flex;
         justify-content: center;
         background: linear-gradient(230deg, #222323, #222323, #222323, #301B38, #371742);
+        height: 570px;
         width: 100%;
-        height: 300px;
         color: white;
+
     }
 
     .contepr {
-        display: grid;
-        grid-template-columns: 1.6fr 1fr;
-        grid-template-rows: auto auto;
-        height: 300px;
-
+        display: flex;
+        flex-direction: column;
+        height: 570px;
 
     }
 
@@ -883,39 +2151,41 @@ footer a {
     }
 
     .eprtext {
-        font-size: 7.2px;
-        margin-left: 10px;
-        margin-top: 0px;
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 30px;
     }
 
     .indent-li {
-        text-indent: -5px;
+        text-indent: -20px;
         /* ลดระยะบรรทัดแรก */
-        padding-left: 5px;
+        padding-left: 20px;
         /* ทำให้บรรทัดที่สองเริ่มจากจุดเดิม */
     }
 
     .eprph {
         display: flex;
+        align-items: center;
         flex-direction: column;
         margin-right: 10px;
-        margin-top: 0;
+        margin-top: 20px;
         padding: 0;
     }
 
     .eprph img {
-        height: 80px;
-        width: auto;
+        height: 200px;
+        width: 350px;
         margin-right: 5px;
         border-radius: 5px;
         filter: drop-shadow(5px 5px 5px #161616);
     }
+
     .dots {
         display: flex;
         justify-content: center;
-        margin-top: 5px;
+        margin-top: 10px;
     }
-    
+
     .dot {
         width: 5px;
         height: 5px;
@@ -925,24 +2195,26 @@ footer a {
         display: inline-block;
         transition: background-color 0.3s ease;
     }
-    .next img {
-        height: 20px;
-        width: auto;
-    }
-    .prev img {
-        height: 20px;
-        width: auto;
-    }
+
+
     .active {
         background-color: #bb00ff;
     }
+
     .actionpreview {
         display: flex;
         justify-content: center;
         margin: 20px;
         gap: 5px;
-    
+
     }
+
+    .actionpreview img {
+        height: 30px;
+        width: auto;
+
+    }
+
     .container4 {
         display: flex;
         justify-content: center;
@@ -1063,13 +2335,13 @@ footer a {
         height: auto;
         border-radius: 20px;
     }
-    
+
     .dotspj {
         display: flex;
         justify-content: center;
-        margin-top: 6px;
+        margin-top: 10px;
     }
-    
+
     .pjdot {
         width: 5px;
         height: 5px;
@@ -1079,6 +2351,7 @@ footer a {
         display: inline-block;
         transition: background-color 0.3s ease;
     }
+
     .activepj {
         background-color: #bb00ff;
     }
@@ -1087,8 +2360,547 @@ footer a {
         margin-top: 20px;
         display: flex;
         justify-content: center;
- 
+
     }
+
+    .pjph img {
+        border-radius: 10px;
+    }
+
+    .actionpreviewpj {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        gap: 5px;
+
+    }
+
+    .actionpreviewpj img {
+        height: 30px;
+        width: auto;
+
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 70px;
+        background-color: #222323;
+        color: white;
+        font-size: 8px;
+    }
+
+    footer a {
+        color: yellow;
+    }
+
+    .adds {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+/* ***************************************400px************************************** */
+
+@media screen and (max-width: 400px) {
+
+    body {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+
+    }
+
+    nav {
+        position: fixed;
+        /* ทำให้แถบเมนูคงที่ */
+        height: 80px;
+        background-color: #222322;
+        color: white;
+        width: 100%;
+        /* ทำให้ navbar กว้างเต็มหน้าจอ */
+        padding: 10px 0;
+        /* เพิ่ม padding ให้ดูสวยงาม */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* backdrop-filter: blur(10px); ทำให้พื้นหลังเบลอ */
+        z-index: 1000;
+        /* ให้ Navbar อยู่เหนือทุกอย่าง */
+
+    }
+
+    nav .menuitem {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 20px;
+
+
+
+    }
+
+    .logo1 {
+        display: block;
+        margin-left: 2px;
+
+    }
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .minimenu a {
+        display: none;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+
+
+    .logo {
+        display: none;
+
+    }
+
+    .iconnav i {
+        display: block;
+
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 850px;
+        /* ใช้ min-height แทน */
+        margin-top: 80px;
+        /* ให้เนื้อหาห่างจาก nav */
+        background-size: cover;
+        /* ทำให้ภาพเต็มพื้นที่ */
+        background-position: center;
+        /* จัดให้อยู่ตรงกลาง */
+        background-repeat: no-repeat;
+        /* ป้องกันการซ้ำ */
+        background-image: url(images/backgroundbody.png);
+    }
+
+    .conthome {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90px;
+        margin-top: 550px;
+
+    }
+
+    .contname {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-left: 0;
+    }
+
+    .engname {
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+
+    .thname {
+        width: 100%;
+        font-size: 20px;
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .contphotome {
+        padding-right: 0px;
+
+    }
+
+    .photome img {
+
+        height: 350px;
+
+    }
+
+
+    .container1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(130deg, #222323, #222323, #222323, #301B38, #371742);
+        /* background-color: #252525; */
+        width: 100%;
+        height: 300px;
+    }
+
+    .contpsn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        /* background-r: #868686; */
+        height: 300px;
+        /* padding: 0 100px; */
+    }
+
+    .boxtitle {
+        display: flex;
+        grid-column: span 2;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-top: 0px;
+
+    }
+
+
+    .boxph {
+        display: flex;
+        justify-content: end;
+        margin-right: 10px;
+    }
+
+    .boxpsn {
+        display: flex;
+        margin-top: 30px;
+        color: white;
+
+    }
+
+    .psntext {
+        display: flex;
+        margin-left: 10px;
+        flex-direction: column;
+        font-size: 10px;
+        margin-top: 0px;
+        line-height: 1.8;
+
+    }
+
+
+    .psnphotome img {
+        margin-top: 10px;
+        height: 150px;
+        width: auto;
+        border-radius: 15px;
+    }
+
+
+
+    .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        background: url(images/backgroundobj.png);
+        background-size: cover;
+        /* ทำให้ภาพเต็มพื้นที่ */
+        background-position: center;
+        /* จัดให้อยู่ตรงกลาง */
+        background-repeat: no-repeat;
+        /* ป้องกันการซ้ำ */
+    }
+
+    .contobj {
+        height: 250px;
+        padding: 0 25px;
+    }
+
+    .contobj {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .objtitle {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .objtext {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+
+    .container3 {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(230deg, #222323, #222323, #222323, #301B38, #371742);
+        height: 470px;
+        width: 100%;
+        color: white;
+
+    }
+
+    .contepr {
+        display: flex;
+        flex-direction: column;
+        height: 470px;
+    
+    }
+
+    .eprtitle {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+
+    }
+
+    .eprtext {
+        font-size: 8px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .indent-li {
+        text-indent: -20px;
+        /* ลดระยะบรรทัดแรก */
+        padding-left: 20px;
+        /* ทำให้บรรทัดที่สองเริ่มจากจุดเดิม */
+    }
+
+    .eprph {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .eprph img {
+        height: 150px;
+        width: 280px;
+        margin-right: 5px;
+        border-radius: 5px;
+        filter: drop-shadow(5px 5px 5px #161616);
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+        margin: 1px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+
+    .active {
+        background-color: #bb00ff;
+    }
+
+    .actionpreview {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        gap: 5px;
+
+    }
+
+    .actionpreview img {
+        height: 30px;
+        width: auto;
+
+    }
+
+    .container4 {
+        display: flex;
+        justify-content: center;
+        background-color: #222323;
+        width: 100%;
+        height: 290px;
+        color: white;
+    }
+
+    .contedc {
+        height: 290px;
+        display: grid;
+        grid-template-columns: 2fr 0fr 2fr;
+        /* ทำให้คอลัมน์ที่ 3 แคบลง */
+        grid-template-rows: auto auto auto;
+
+    }
+
+    .edctitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: span 3;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .edcuns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .edcpts {
+        display: flex;
+        justify-content: center;
+        filter: drop-shadow(1px 1px 1px #161616);
+    }
+
+    .edcpts img {
+        height: 180px;
+    }
+
+    .edchsc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .unsicon img {
+        height: 50px;
+        width: auto;
+        filter: drop-shadow(15px 10px 5px #161616);
+    }
+
+    .hscicon img {
+        height: 50px;
+        width: auto;
+        filter: drop-shadow(15px 10px 5px #161616);
+    }
+
+    .unstitle {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .hsctitle {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .unstext {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .hsctext {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .container5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 100%;
+        height: 350px;
+        background: linear-gradient(130deg, #222323, #222323, #222323, #301B38, #371742);
+    }
+
+    .contpj {
+        height: 350px;
+
+    }
+
+    .pjtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        padding: 0;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .pjlink {
+        font-size: 10px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .pjphfade {
+        width: 300px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .dotspj {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .pjdot {
+        width: 5px;
+        height: 5px;
+        margin: 1px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .activepj {
+        background-color: #bb00ff;
+    }
+
+    .actionpreviewpj {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        gap: 5px;
+
+    }
+
+    .actionpreviewpj img {
+        height: 30px;
+        width: auto;
+
+    }
+
+    .pjph {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
     .pjph img {
         border-radius: 10px;
     }
